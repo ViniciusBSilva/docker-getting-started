@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM node:12-alpine
-WORKDIR /app
+WORKDIR /docker-getting-started
 COPY package.json yarn.lock ./
 RUN yarn install --production
 COPY . .
